@@ -56,7 +56,7 @@
                                                     <a href="  {{route('employee.salary.increment.edit',$salary->id)}}  "
                                                        class="btn btn-info"><i class="fa fa-plus-circle"></i></a>
                                                     <a target="_blank" href="{{route('employee.salary.details',$salary->id)}}   "
-                                                       class="btn btn-danger" ><i class="fa fa-eye"></i></a>
+                                                       class="btn btn-success" ><i class="fa fa-eye"></i></a>
                                                 </td>
                                             </tr>
                                         @endforeach

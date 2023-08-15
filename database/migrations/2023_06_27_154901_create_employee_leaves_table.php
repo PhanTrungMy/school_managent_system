@@ -15,7 +15,7 @@ class CreateEmployeeLeavesTable extends Migration
     {
         Schema::create('employee_leaves', function (Blueprint $table) {
             $table->id();
-            $table->string('employee_id')->comment('employee_id= user_id');
+            $table->string('employee_id')->comment('employee_id=user_id');
             $table->string('leave_purpose_id');
             $table->date('start_date');
             $table->date('end_date');

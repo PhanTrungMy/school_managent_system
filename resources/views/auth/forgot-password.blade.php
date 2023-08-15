@@ -40,6 +40,7 @@
 										<div class="input-group-prepend">
 											<span class="input-group-text bg-transparent text-white"><i class="ti-email"></i></span>
 										</div>
+										<label for="email" value="{{ __('Email') }}"  ></label>
 										<input type="email" class="form-control pl-15 bg-transparent text-white plc-white"name="email" :value="old('email', $request->email)" placeholder="Your Email">
 									</div>
 								</div>

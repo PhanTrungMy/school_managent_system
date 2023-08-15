@@ -39,15 +39,21 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text bg-transparent text-white"><i class="ti-user"></i></span>
                                     </div>
-                                    <input type="text" class="form-control pl-15 bg-transparent text-white plc-white" id="name" name="name"  placeholder="Full Name">
+                                    <label for="name" value="{{ __('Name') }}" ></label>
+                                    <input type="text" class="form-control pl-15 bg-transparent text-white plc-white"
+                                           id="name" name="name" :value="old('name')" placeholder="Full Name">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text bg-transparent text-white"><i class="ti-email"></i></span>
+                                        <span class="input-group-text bg-transparent text-white"><i
+                                                class="ti-email"></i></span>
                                     </div>
-                                    <input type="email" id="email" name="email" class="form-control pl-15 bg-transparent text-white plc-white" placeholder="Email">
+                                    <label for="email"  value="{{ __('Email') }}" ></label>
+                                    <input type="email" id="email" name="email"
+                                           class="form-control pl-15 bg-transparent text-white plc-white" :value="old('email')"  required autofocus autocomplete="name" 
+                                           placeholder="Email">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -55,7 +61,10 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text bg-transparent text-white"><i class="ti-lock"></i></span>
                                     </div>
-                                    <input type="password" id="password" name="password" class="form-control pl-15 bg-transparent text-white plc-white" placeholder="Password">
+                                    <label for="password"  value="{{ __('Password') }}"></label>
+                                    <input type="password" id="password" name="password"
+                                           class="form-control pl-15 bg-transparent text-white plc-white" required autocomplete="new-password" 
+                                           placeholder="Password">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -63,29 +72,38 @@
                                     <div class="input-group-prepend">
                                         <span class="input-group-text bg-transparent text-white"><i class="ti-lock"></i></span>
                                     </div>
-                                    <input type="password" id="password_confirmation" class="form-control pl-15 bg-transparent text-white plc-white" placeholder="Retype Password">
+                                    <label for="password_confirmation" value="{{ __('Confirm Password') }}"></label>
+                                    <input type="password" id="password_confirmation"
+                                           class="form-control pl-15 bg-transparent text-white plc-white"  name="password_confirmation" required autocomplete="new-password"
+                                           placeholder="Retype Password">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-12">
                                     <div class="checkbox text-white">
-                                        <input type="checkbox" id="basic_checkbox_1" >
-                                        <label for="basic_checkbox_1">I agree to the <a href="#" class="text-warning"><b>Terms</b></a></label>
+                                        <input type="checkbox" id="basic_checkbox_1">
+                                        <label for="basic_checkbox_1">I agree to the <a href="#"
+                                                                                        class="text-warning"><b>Terms</b></a></label>
                                     </div>
                                 </div>
                                 <!-- /.col -->
                                 <div class="col-12 text-center">
-                                    <button type="submit" class="btn btn-info btn-rounded margin-top-10" >REGISTER</button>
+                                    <button type="submit" class="btn btn-info btn-rounded margin-top-10">REGISTER
+                                    </button>
                                 </div>
                                 <!-- /.col -->
                             </div>
+
+
+                            <div class="text-center">
+                            <p class="mt-15 mb-0 text-white">Already have an account?<a href="{{route('login')}}"
+                                                                                        class="text-danger ml-5"> Sign
+                                    In</a></p>
+                        </div>
                         </form>
 
-                        
 
-                        <div class="text-center">
-                            <p class="mt-15 mb-0 text-white">Already have an account?<a href="{{route('login')}}" class="text-danger ml-5"> Sign In</a></p>
-                        </div>
+                        
                     </div>
                 </div>
             </div>

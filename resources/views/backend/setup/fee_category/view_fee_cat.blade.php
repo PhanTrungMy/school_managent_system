@@ -38,7 +38,7 @@
                                                     <a href="{{route('fee.category.edit',$category->id)}}" class="btn btn-info">Edit</a>
                                                     <a href="{{route('fee.category.delete',$category->id)}}" class="btn btn-danger" id="delete">Delete</a>
                                                 </td>
-                                            </tr>s
+                                            </tr>
                                         @endforeach
 
                                         </tbody>
