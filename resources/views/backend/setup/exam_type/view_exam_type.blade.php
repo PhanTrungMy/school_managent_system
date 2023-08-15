@@ -38,7 +38,7 @@
                                                     <a href="{{route('exam.type.edit',$exam->id)}}" class="btn btn-info">Edit</a>
                                                     <a href="{{route('exam.type.delete',$exam->id)}}" class="btn btn-danger" id="delete">Delete</a>
                                                 </td>
-                                            </tr>s
+                                            </tr>
                                         @endforeach
 
                                         </tbody>

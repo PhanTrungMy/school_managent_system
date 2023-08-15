@@ -30,17 +30,18 @@
                                         </tr>
                                         </thead>
                                         <tbody>
+                                        @isset($allData)
                                         @foreach($allData as $key => $assign)
                                             <tr>
                                                 <td>{{$key+1}}</td>
-                                                <td>{{ $assign['student_class']['name']}}</td>
+                                          <td>  {{$assign['student_class']['name']}}</td>
                                                 <td>
                                                     <a href="{{route('assign.subject.edit',$assign->class_id)}} " class="btn btn-info">Edit</a>
                                                     <a href="  {{route('assign.subject.details',$assign->class_id)}}" class="btn btn-primary" >Details</a>
                                                 </td>
-                                            </tr>s
+                                            </tr>
                                         @endforeach
-
+                                        @endisset
                                         </tbody>
                                         <tfoot>
 

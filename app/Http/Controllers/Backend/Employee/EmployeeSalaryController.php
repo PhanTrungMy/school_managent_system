@@ -40,8 +40,7 @@ class EmployeeSalaryController extends Controller
   }
  public function EmployeeSalaryDetails($id){
       $data['details'] = User::find($id);
-      $data['
-      '] = EmployeeSallarylog::where('employee_id',$data['details']->id)->get();
+      $data['salary_log'] = EmployeeSallarylog::where('employee_id',$data['details']->id)->get();
 //      dd($data['salary_log']->toArray()); lay du lieu bang table
      return view('backend.employee.employee_salary.employee_salary_details',$data);
 

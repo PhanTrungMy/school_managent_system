@@ -16,7 +16,7 @@
     <!-- Style-->
     <link rel="stylesheet" href="{{asset('backend/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('backend/css/skin_color.css')}}">
-    //Notification thanh cong
+    {{-- //Notification thanh cong --}}
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" >
 
 </head>
@@ -95,7 +95,7 @@
 </script>
 
 <!-- Sunny Admin App -->
-//Notification thanh cong
+{{-- //Notification thanh cong --}}
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
 <script>

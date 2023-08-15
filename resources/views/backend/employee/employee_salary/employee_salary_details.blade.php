@@ -18,8 +18,8 @@
                             <div class="box-header with-border">
                                 <h3 class="box-title">Employee Salary Details</h3>
                                 <br>
-                           <h5 > <strong>Employee Name</strong>{{$details->name}}</h5>
-                           <h5 > <strong>Employee Id No</strong>{{$details->id_no}}</h5>
+                           <h5 > <strong>Employee Name :</strong>{{$details->name}}</h5>
+                           <h5 > <strong>Employee Id No :</strong>{{$details->id_no}}</h5>
                             </div>
                             <!-- /.box-header -->
                             <div class="box-body">

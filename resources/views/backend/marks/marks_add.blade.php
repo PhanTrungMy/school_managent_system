@@ -63,6 +63,7 @@
                                                             class="form-control">
                                                         <option selected="">Select Subject
                                                         </option>
+                                                       
                                                     </select>
                                                 </div>
                                             </div>
@@ -128,7 +129,8 @@
             $.ajax({
                 url: "{{ route('student.marks.getstudents')}}",
                 type: "GET",
-                data: {'year_id':year_id,'class_id':class_id,'assign_subject_id':assign_subject_id,'exam_type_id':exam_type_id},
+                // 'assign_subject_id':assign_subject_id,'exam_type_id':exam_type_id
+                data: {'year_id':year_id,'class_id':class_id,},
                 success: function (data) {
                     $('#marks-entry').removeClass('d-none');
                     var html = '';

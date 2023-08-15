@@ -38,7 +38,7 @@
                                                     <a href="{{route('student.group.edit',$group->id)}}" class="btn btn-info">Edit</a>
                                                     <a href="{{route('student.group.delete',$group->id)}}" class="btn btn-danger" id="delete">Delete</a>
                                                 </td>
-                                            </tr>s
+                                            </tr>
                                         @endforeach
 
                                         </tbody>

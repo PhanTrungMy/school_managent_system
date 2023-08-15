@@ -5,9 +5,9 @@
                 <a class="nav-link" href="javascript:void(0)">FAQ</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">www.trungmyadc.com</a>
+                <a class="nav-link" href="#">www.trungmy0933.com</a>
             </li>
         </ul>
     </div>
-    &copy; 2020 <a href="#">Psd to Html Expert</a>. All Rights Reserved.
+    &copy; 2023 <a href="#">Psd to Html Expert</a>. All Rights Reserved.
 </footer>
