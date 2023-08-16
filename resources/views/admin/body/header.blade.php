@@ -15,14 +15,15 @@
                     </a>
                 </li>
                 <li class="btn-group nav-item d-none d-xl-inline-block">
-                    <a href="#" class="waves-effect waves-light nav-link rounded svg-bt-icon" title="">
-                        <i class="ti-check-box"></i>
+                    <a href="{{route('locale', ['lang'=> 'vi'])}}" class="waves-effect waves-light nav-link rounded svg-bt-icon" title="">
+                        {{__('VI')}}
                     </a>
                 </li>
                 <li class="btn-group nav-item d-none d-xl-inline-block">
-                    <a href="calendar.html" class="waves-effect waves-light nav-link rounded svg-bt-icon" title="">
-                        <i class="ti-calendar"></i>
+                    <a href="{{route('locale', ['lang'=> 'en'])}}" class="waves-effect waves-light nav-link rounded svg-bt-icon" title="">
+                        {{__('EN')}}
                     </a>
+
                 </li>
             </ul>
         </div>
@@ -30,13 +31,13 @@
         <div class="navbar-custom-menu r-side">
             <ul class="nav navbar-nav">
                 <!-- full Screen -->
-                <li class="search-bar">
+                <li class="search-bar mr-4">
                     <div class="lookup lookup-circle lookup-right">
                         <input type="text" name="s">
                     </div>
                 </li>
                 <!-- Notifications -->
-                <li class="dropdown notifications-menu">
+                {{-- <li class="dropdown notifications-menu">
                     <a href="#" class="waves-effect waves-light rounded dropdown-toggle" data-toggle="dropdown" title="Notifications">
                         <i class="ti-bell"></i>
                     </a>
@@ -54,65 +55,23 @@
                                 </div>
                             </div>
                         </li>
-
-                        <li>
-                            <!-- inner menu: contains the actual data -->
-                            <ul class="menu sm-scrol">
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-users text-info"></i> Curabitur id eros quis nunc suscipit blandit.
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-warning text-warning"></i> Duis malesuada justo eu sapien elementum, in semper diam posuere.
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-users text-danger"></i> Donec at nisi sit amet tortor commodo porttitor pretium a erat.
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-shopping-cart text-success"></i> In gravida mauris et nisi
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-user text-danger"></i> Praesent eu lacus in libero dictum fermentum.
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-user text-primary"></i> Nunc fringilla lorem
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-user text-success"></i> Nullam euismod dolor ut quam interdum, at scelerisque ipsum imperdiet.
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
                         <li class="footer">
                             <a href="#">View all</a>
                         </li>
                     </ul>
-                </li>
+                </li> --}}
 
                 <!-- User Account-->
                 <li class="dropdown user user-menu">
                     <a href="#" class="waves-effect waves-light rounded dropdown-toggle p-0" data-toggle="dropdown" title="User">
-                        <img src="{{(!empty($user->image)) ? url('upload/user_images/'.$user->image): url('upload/no_image.jpg')}}" alt="">
+                        <img  src="{{ (!empty($user->image))? url('upload/user_images/'.$user->image):url('upload/no_image.jpg') }} " alt="">
                     </a>
                     <ul class="dropdown-menu animated flipInX">
                         <li class="user-body">
-                            <a class="dropdown-item" href="#"><i class="ti-user text-muted mr-2"></i> Profile</a>
-                            <a class="dropdown-item" href="#"><i class="ti-wallet text-muted mr-2"></i> My Wallet</a>
-                            <a class="dropdown-item" href="#"><i class="ti-settings text-muted mr-2"></i> Settings</a>
+                            <a class="dropdown-item" href="#"><i class="ti-user text-muted mr-2"></i> {{__('Profile')}}</a>
+                            <a class="dropdown-item" href="#"><i class="ti-settings text-muted mr-2"></i> {{__('Setting')}}</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="{{route('admin.logout')}}"><i class="ti-lock text-muted mr-2"></i> Logout</a>
+                            <a class="dropdown-item" href="{{route('admin.logout')}}"><i class="ti-lock text-muted mr-2"></i>{{__('Logout')}}</a>
                         </li>
                     </ul>
                 </li>
@@ -126,3 +85,4 @@
         </div>
     </nav>
 </header>
+                            

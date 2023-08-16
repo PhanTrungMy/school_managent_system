@@ -33,6 +33,7 @@ use App\Http\Controllers\backend\Student\RegistrationFeeController;
 use App\Http\Controllers\Backend\Student\StudentRegController;
 use App\Http\Controllers\Backend\Student\StudentRollController;
 use App\Http\Controllers\Backend\UserController;
+use App\Http\Controllers\LanguageController;
 use App\Models\AccountEmployeeSalary;
 use App\Models\StudentGroup;
 use Illuminate\Support\Facades\Route;
@@ -51,6 +52,7 @@ Route::group(['middleware' => 'prevent-back-history'],function(){
      
      
     Route::group(['middleware' => 'auth'],function(){
+
         
     Route::prefix('users')->group(function () {
         Route::get('/view', [UserController::class, 'UserView'])->name('user.view');
@@ -62,6 +64,8 @@ Route::group(['middleware' => 'prevent-back-history'],function(){
 
 
 });
+// language 
+Route::get('language/{lang}',[LanguageController::class, 'ChangeLanguage'])->name('locale');
 // User profile and change Password
 
 Route::prefix('profile')->group(function () {
