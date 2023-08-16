@@ -54,13 +54,12 @@
                                                 <td>{{ $employee->code }}</td>
 {{--                                                @endif--}}
                                                 <td>
-                                                    {{--                                          {{route('school.subject.delete',$subject->id)}}--}}
                                                     <a title="Increment" href="  {{route('employee.edit',$employee->id)}}  "
                                                        class="btn btn-info"><i class="fa fa-plus-circle"></i></a>
                                                     <a title="Details" target="_blank" href="{{route('employee.details',$employee->id)}}   "
                                                        class="btn btn-primary" ><i class="fa fa-eye"></i></a>
                                                 </td>
-                                            </tr>s
+                                            </tr>
                                         @endforeach
 
                                         </tbody>
